@@ -719,11 +719,11 @@ btn:focus {
   border: 1px solid #4d5ae5;
 }
 
-.input-svg:is(:hover, :focus) .modal-icon {
+.modal-input:is(:hover, :focus) + .modal-icon {
   fill: #4d5ae5;
 }
 
-.modal-icon:is(:hover, :focus) .modal-input {
+.modal-icon:is(:hover, :focus) + .modal-input {
   border: 1px solid #4d5ae5;
 } 
 
