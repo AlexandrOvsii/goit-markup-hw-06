@@ -639,7 +639,7 @@ btn:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
-  padding: 15px;
+  padding: 24px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -648,17 +648,17 @@ btn:focus {
 }
 
 .modal-close-button {
-  position: absolute;
+  display: block;
+  margin-left: auto;
   width: 24px;
   height: 24px;
-  right: 20px;
-  top: 20px;
   border-radius: 50%;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
 }
 
 .modal-close-button:is(:hover, :focus) {
@@ -687,6 +687,84 @@ btn:focus {
   pointer-events: none;
 }
 
+.modal-text {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.modal-form {
+}
+
+.modal-input {
+  width: 100%;
+  margin-bottom: 8px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 38px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.modal-input:is(:hover, :focus) {
+  border: 1px solid #4d5ae5;
+}
+
+.input-svg:is(:hover, :focus) .modal-icon {
+  fill: #4d5ae5;
+}
+
+.modal-icon:is(:hover, :focus) .modal-input {
+  border: 1px solid #4d5ae5;
+} 
+
+.modal-input-text span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.input-svg {
+  position: relative;
+}
+
+.modal-icon {
+  fill: #000000;
+  position: absolute;
+  top: 13px;
+  left: 19px;
+  display: block;
+  margin: 0 auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea {
+  padding: 8px 16px;
+  font-size: 12px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:is(:hover, :focus) {
+  border: 1px solid #4d5ae5;
+}
+
 /* =============== SUBSCRIBE ============== */
 
 .subscribe-container {
@@ -702,7 +780,6 @@ btn:focus {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-
 
 .subscribe-btn {
   font-family: var(--primary-font);
@@ -728,7 +805,6 @@ btn:focus {
   background-color: #404bbf;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  border-radius: 4px;
 }
 
 .email-input {
@@ -746,6 +822,10 @@ btn:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  padding-left: 16px;
+  color: #ffffff;
+  box-shadow: 0px 0px 0px 50px #2e2f42 inset;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.6);
 }
 
 .icon-send {
