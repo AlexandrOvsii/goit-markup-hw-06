@@ -442,7 +442,6 @@ btn:focus {
 }
 
 .footer-description {
-  color: #e7e9fc;
   max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
@@ -478,7 +477,7 @@ btn:focus {
 .social-media-list {
   display: flex;
   justify-content: flex-start;
-  gap: 24px;
+  gap: 16px;
 }
 
 .social-media-item {
@@ -619,7 +618,7 @@ btn:focus {
 
 /* ============== MODAL ============== */
 
-.backdrop{
+.backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -762,6 +761,7 @@ btn:focus {
   padding: 8px 16px;
   font-size: 12px;
   width: 100%;
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 8px;
@@ -808,8 +808,7 @@ btn:focus {
 }
 
 .privacy-policy {
-  color: #4D5AE5;
-  margin-left: 4px;
+  color: #4d5ae5;
 }
 
 /* =============== SUBSCRIBE ============== */
